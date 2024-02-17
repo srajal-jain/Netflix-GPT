@@ -19,6 +19,16 @@
 - BugFix- if the user is not logged in, redirect /browse to login page & vice-versa
 - Unsuscribe to the onAuthStateChanged callback when the component unmounts
 - Add hardcoded values to constants file
+- Register TMDB API & create an app and get access token
+- Get Data from TMDB now playing movies list API
+- Custom Hook for Now Playing Movies
+- Create movieSlice
+- Update Store with movies Data
+- Planning for MainContauiner & secondary container
+- Fetch Data for Trailer Video
+- Update Store with Trailer Video Data
+- Embedded the Yotube video and make it autoplay and mute
+- Tailwind Classes to make Main Container look awesome
 
 # Features
 
