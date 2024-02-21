@@ -1,7 +1,11 @@
 import React, { useState, useRef } from "react";
 import Header from "./Header";
 import { checkValidData } from "../utils/validate";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword , updateProfile } from "firebase/auth";
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  updateProfile,
+} from "firebase/auth";
 import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
@@ -121,6 +125,12 @@ const Login = () => {
           placeholder="Password"
           className="p-3 my-4 w-full bg-gray-700 bg-opacity-80"
         ></input>
+        {!isSignInForm && (
+          <p className="text-gray-400 mt-2 text-sm">
+            Password must be more than 6 character, contains one numeric,
+            special, and uppercase character.
+          </p>
+        )}
         <p className="font-bold text-red-600 text-md">{errorMessage}</p>
         <button
           onClick={handleButtonClick}
