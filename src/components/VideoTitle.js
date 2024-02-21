@@ -2,14 +2,14 @@ import React from "react";
 
 const VideoTitle = ({ title, overview }) => {
   return (
-    <div className="w-screen aspect-video absolute px-24 pt-[20%] text-white bg-gradient-to-r from-black">
-      <h1 className="font-bold text-6xl">{title}</h1>
-      <p className="w-1/4 py-6 text-lg">{overview.length > 144 ? overview.slice(0,144) +"..." : overview.slice(0,144)}</p>
-      <div className="">
-        <button className="bg-white p-4 px-16 text-black text-xl rounded-lg hover:opacity-80">
+    <div className="w-screen aspect-video pt-[20%] px-6 md:px-24 absolute text-white bg-gradient-to-r from-black">
+      <h1 className="text-2xl md:text-6xl font-bold">{title}</h1>
+      <p className="hidden md:inline-block py-6 text-lg w-1/4">{overview.length > 144 ? overview.slice(0,144) +"..." : overview.slice(0,144)}</p>
+      <div className="my-4 md:m-0">
+        <button className="bg-white text-black py-1 md:py-4 px-3 md:px-12 text-sm md:text-xl  rounded-lg hover:bg-opacity-80">
           Play
         </button>
-        <button className="bg-gray-500 p-4 px-12 text-white text-xl rounded-lg mx-2 hover:opacity-80">
+        <button className="hidden md:inline-block mx-2  bg-gray-500 text-white p-4 px-12 text-xl bg-opacity-50 rounded-lg">
           More Info
         </button>
       </div>
