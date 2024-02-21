@@ -16,6 +16,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    
     // onAuthStateChanged is kind of like a event listener
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
