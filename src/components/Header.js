@@ -44,8 +44,8 @@ const Header = () => {
         navigate("/browse");
       } else {
         // User is signed out
-        dispatch(removeUser());
         navigate("/");
+        dispatch(removeUser());
       }
     });
 

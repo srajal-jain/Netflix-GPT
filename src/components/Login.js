@@ -116,12 +116,14 @@ const Login = () => {
         <input
           ref={email}
           type="email"
+          defaultValue={"srajal@netflix.com"}
           placeholder="Email Address"
           className="p-3 my-4 w-full bg-gray-700 bg-opacity-80"
         ></input>
         <input
           ref={password}
           type="password"
+          defaultValue={"Srajal@123"}
           placeholder="Password"
           className="p-3 my-4 w-full bg-gray-700 bg-opacity-80"
         ></input>
