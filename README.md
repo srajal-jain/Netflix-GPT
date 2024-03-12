@@ -1,3 +1,5 @@
+Live- https://netflixgpt-44266.web.app
+
 # Netflix-GPT
 
 - Create React App
